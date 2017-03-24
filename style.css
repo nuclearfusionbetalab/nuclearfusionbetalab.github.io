@@ -1,0 +1,474 @@
+body, html{
+	height:100%;
+}
+
+body{
+	/*overflow:hidden;*/
+}
+
+#wrapper {
+	height:100%;
+	overflow:hidden;
+	margin-left:auto;
+    margin-right:auto;
+    width:960px;
+}
+
+#background {
+	height:500px;
+	width:750px;
+	background-color:black;
+	margin-top:25px;
+	clear:both;
+	z-index:-9999999;
+	text-align:center;
+	line-height:250px;
+	position:relative;
+}
+
+.tab {
+	height:20px;
+	width:80px;
+	background-color:black;
+	border:1px solid white;
+	border-radius:5px;
+	color:white;
+	font-family:Arial;
+	display:inline-block;
+	float:left;
+	text-align:center;
+}
+
+.highlighted {
+	-webkit-box-shadow: 0 0 8px #000000;
+    -moz-box-shadow: 0 0 8px #000000;
+    box-shadow: 0 0 8px #000000;
+    cursor:pointer;
+}
+
+.body{
+	display:none;
+}
+
+#open {
+	display:inline-block;
+	position:relative;
+	font-family:Arial;
+	font-size:25pt;
+	color:white;
+	top:-300px;
+	left:240px;
+}
+
+/*ALL OF THE LEARN TAB CSS*/
+
+.prevbutton {
+	height:20px;
+	width:80px;
+	border-width:5px;
+	border-radius:5px;
+	border-color:white;
+	text-align:center;
+	background-color:#666666;
+	color:white;
+	z-index:11;
+	position:relative;
+	top:-515px;
+	left:5px;
+}
+
+.words {
+	color:white;
+	position:relative;
+	text-align:center;
+	top:-350px;
+	left:-100px;
+	font-family:Arial;
+	font-size:20px;
+}
+
+.transcript {
+	height:20px;
+	width:120px;
+	border-width:5px;
+	border-radius:5px;
+	border-color:white;
+	text-align:center;
+	background-color:#666666;
+	color:white;
+	z-index:11;
+	position:relative;
+	top:-62px;
+	left:560px;
+}
+.transc{
+	color:grey;
+	position:relative;
+	text-align:center;
+	top:-177px;
+	left:-100px;
+	font-family:Arial;
+	font-size:20px;
+}
+
+.speaker {
+	z-index:12;
+	position:relative;
+	top:-200px;
+	left:700px;
+}
+
+/*SLIDE 2*/
+#graph {
+	position:relative;
+	top:-500px;
+	left:130px;
+}
+#audio2 {
+	top:-403px;
+	left:196px;
+}
+#text2 {
+	top:-150px;
+}
+#trans2{
+	top:-82px;
+}
+/*SLIDE 3*/
+#eq1_learn {
+	position:relative;
+	top:-400px;
+	left:225px;
+}
+#audio3 {
+	top:-178px;
+	left:396px;
+}
+#text3 {
+	top:-450px;
+}
+#trans3{
+	top:-82px;
+}
+/*SLIDE 4*/
+#eq2_learn {
+	position:relative;
+	top:-400px;
+	left:255px;
+}
+#audio4 {
+	top:-178px;
+	left:446px;
+}
+#text4 {
+	top:-450px;
+}
+#trans4{
+	top:-82px;
+}
+/*SLIDE 5*/
+#eq3_learn {
+	position:relative;
+	top:-400px;
+	left:225px;
+}
+#audio5 {
+	top:-178px;
+	left:396px;
+}
+#text5 {
+	top:-450px;
+}
+#trans5{
+	top:-82px;
+}
+/*SLIDE 6*/
+#audio6 {
+	top:-199px;
+}
+#prevbutton6 {
+	top:-495px;
+}
+
+/*ALL OF THE INTERACT TAB CSS*/
+
+.twelve{
+	font-family:Arial;
+	font-size:20px;
+	color:white; 
+	z-index:10;
+	position:relative;
+	top:-150px;
+}
+
+.count{
+	background-color:white;
+	border-color:black;
+	color:black;
+	text-align:right;
+	width:80px;
+	height:20px;
+	z-index:12;
+	position:relative;
+	left:725px;
+	top:-200px;
+}
+/*pressure*/
+/*#pplus{
+	background-color:grey;
+	position:relative;
+	left:349px;
+	top:-220px;
+}
+#pminus{
+	background-color:grey;
+	position:relative;
+	left:220px;
+	top:-220px;
+}*/
+/*temperature*/
+/*#tcounter{
+	top:-195px;
+}
+#tplus{
+	background-color:grey;
+	position:relative;
+	left:412px;
+	top:-435px;
+}
+#tminus{
+	background-color:grey;
+	position:relative;
+	left:283px;
+	top:-435px;
+}*/
+#instruct{
+	position:relative;
+	left:250px;
+	top:-175px;
+	font-family:Arial;
+	font-size:34px;
+	text-align:center;
+	z-index:40;
+}
+/*hydrogen*/
+#tank{
+	position:relative;
+	left:250px;
+	top:-60px;
+}
+#H{
+	position:relative;
+	font-size:15px;
+	color:white;
+	left:250px;
+	top:-215px;
+}
+#hplus{
+	position:relative;
+	left:250px;
+	top:-190px;
+}
+
+#case{
+	border:10px solid;
+	border-color:black;
+	width:450px;
+	height:425px;
+	z-index:12;
+	position:relative;
+	top:-565px;
+	left:150px;
+}
+#hydrogen1{
+	border:10px solid;
+	border-color:black;
+	width:450px;
+	height:425px;
+	z-index:12;
+	position:relative;
+	top:-1010px;
+	left:150px;
+}
+.h{
+	position:relative;
+	z-index:13;
+}
+.h2{
+	position:relative;
+	z-index:14;
+}
+.he3{
+	position:relative;
+	z-index:15;
+}
+.he4{
+	position:relative;
+	z-index:16;
+}
+#reset{
+	height:40px;
+	width:150px;
+	color:blue;
+	border:5px;
+	border-radius:5px;
+	background-color:#666666;
+	font-size:40px;
+	position:relative;
+	top:-1350px;
+	left:665px;
+}
+#cheat{
+	background-color:white;
+	position:relative;
+	height:100px;
+	width:1000px;
+	top:-1010px;
+}
+/*#h1{
+	left:475px;
+	top:-800px;
+}
+#h2{
+	left:350px;
+	top:-900px;
+}
+#h3{
+	left:275px;
+	top:-825px;
+}
+#h4{
+	left:450px;
+	top:-1000px;
+}
+#h5{
+	left:250px;
+	top:-975px;
+}
+#h6{
+	left:400px;
+	top:-1200px;
+}
+#h7{
+	left:250px;
+	top:-1225px;
+}
+#h8{
+	left:500px;
+	top:-1300px;
+}
+#h9{
+	left:350px;
+	top:-1100px;
+}
+#h10{
+	left:200px;
+	top:-1275px;
+}*/
+
+/*ALL OF THE QUIZ TAB CSS*/
+
+.question {
+	font-family:Arial;
+	font-size:20px;
+	color:green; 
+	z-index:10;
+}
+
+#equation1 {
+	position:relative;
+	bottom:385px;
+	left:250px;
+	z-index:10;
+}
+#equation4 {
+	position:relative;
+	bottom:385px;
+	left:300px;
+	z-index:10;
+}
+
+span.question {
+	text-align:center;
+	display:inline-block;
+	/*vertical-align:middle;
+	line-height:normal;*/
+	position:relative;
+	left:150px;
+	top:-400px;
+}
+
+.answer {
+	color:black;
+	border-color:black;
+	background-color:#006699;
+	border-radius:5px;
+	text-align:center;
+	height:70px;
+	width:80px;
+	font-size:20px;
+	z-index:11;
+	position:relative;
+	/*line-height:100%;
+	vertical-align:top;*/
+}
+.answer.A {
+	left:200px;
+	top:-355px;
+}
+.answer.B {
+	left:475px;
+	top:-425px;
+}
+.answer.C {
+	left:200px;
+	top:-355px;
+}
+.answer.D {
+	left:475px;
+	top:-425px;
+}
+
+.nextbutton {
+	height:20px;
+	width:80px;
+	border-width:5px;
+	border-radius:5px;
+	border-color:white;
+	text-align:center;
+	background-color:#666666;
+	color:white;
+	z-index:11;
+	position:relative;
+	top:-495px;
+	left:665px;
+}
+
+.message {
+	position:relative;
+	color:white;
+	left:320px;
+	top:-300px;
+	font-family:Arial;
+	font-size:30px;
+}
+
+.exp {
+	color:white;
+	position:relative;
+	text-align:center;
+	top:-250px;
+	left:-100px;
+	font-family:Arial;
+	font-size:18px;
+}
+
+#finish {
+	color:white;
+	position:relative;
+	text-align:center;
+	top:-250px;
+	left:-100px;
+	font-family:Arial;
+	font-size:20px;
+}

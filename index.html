@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<html lang="en">
+		<title>Nuclear Fusion | Virtual Lab</title>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+		<!-- Latest compiled and minified CSS Bootstrap-->
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+
+		<!-- Optional theme -->
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
+
+		<!-- Latest compiled and minified JavaScript Bootstrap-->
+		<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+	</head>
+	<body>
+		<div id="wrapper">
+		<!--The three tabs, Learn, Interact, and Quiz-->
+		<div class="tab" id="learn">Learn</div>
+		<div class="tab" id="interact" onclick="document.getElementById('sound1').pause(); sound1.currentTime=0; document.getElementById('sound2').pause(); sound2.currentTime=0; document.getElementById('sound3').pause(); sound3.currentTime=0; document.getElementById('sound4').pause(); sound4.currentTime=0; document.getElementById('sound5').pause(); sound5.currentTime=0; document.getElementById('sound6').pause(); sound6.currentTime=0">Interact</div>
+		<div class="tab" id="quiz" onclick="document.getElementById('sound1').pause(); sound1.currentTime=0; document.getElementById('sound2').pause(); sound2.currentTime=0; document.getElementById('sound3').pause(); sound3.currentTime=0; document.getElementById('sound4').pause(); sound4.currentTime=0; document.getElementById('sound5').pause(); sound5.currentTime=0; document.getElementById('sound6').pause(); sound6.currentTime=0">Quiz</div>
+		<!--The actual lab-->
+		<div id="background"></div>
+
+			<div id="open">Click a tab to start!</div>
+
+			<div class='body' id="learn" style="color:white">
+
+				<div class="nextbutton" id="nextbutton8" onclick="document.getElementById('sound1').pause(); sound1.currentTime=0">NEXT</div>
+				<div class="nextbutton" id="nextbutton9" style="display:none" onclick="document.getElementById('sound2').pause(); sound1.currentTime=0">NEXT</div>
+				<div class="nextbutton" id="nextbutton10" style="display:none" onclick="document.getElementById('sound3').pause(); sound1.currentTime=0">NEXT</div>
+				<div class="nextbutton" id="nextbutton11" style="display:none" onclick="document.getElementById('sound4').pause(); sound1.currentTime=0">NEXT</div>
+				<div class="nextbutton" id="nextbutton12" style="display:none" onclick="document.getElementById('sound5').pause(); sound1.currentTime=0">NEXT</div>
+				<div class="prevbutton" id="prevbutton2" style="display:none" onclick="document.getElementById('sound2').pause(); sound1.currentTime=0">BACK</div>
+				<div class="prevbutton" id="prevbutton3" style="display:none" onclick="document.getElementById('sound3').pause(); sound1.currentTime=0">BACK</div>
+				<div class="prevbutton" id="prevbutton4" style="display:none" onclick="document.getElementById('sound4').pause(); sound1.currentTime=0">BACK</div>
+				<div class="prevbutton" id="prevbutton5" style="display:none" onclick="document.getElementById('sound5').pause(); sound1.currentTime=0">BACK</div>
+				<div class="prevbutton" id="prevbutton6" style="display:none" onclick="document.getElementById('sound6').pause(); sound1.currentTime=0">BACK</div>
+				<div class="transcript" id="trans1">TRANSCRIPT</div>
+				<div class="transcript" id="trans2" style="display:none">TRANSCRIPT</div>
+				<div class="transcript" id="trans3" style="display:none">TRANSCRIPT</div>
+				<div class="transcript" id="trans4" style="display:none">TRANSCRIPT</div>
+				<div class="transcript" id="trans5" style="display:none">TRANSCRIPT</div>
+				<div class="transcript" id="trans6" style="display:none">TRANSCRIPT</div>
+
+
+				<div id="slide1">
+					<div class="words" id="text1"><strong><u>Nuclear Fission</u></strong>: a reaction in which a large nucleus becomes unstable </br>and <em>splits</em> into smaller atoms with the release of a huge amount of energy</br></br><strong><u>Nuclear Fusion</u></strong>: a reaction in which the nuclei of two small atoms <em>come together</em></br>to form a larger atom with the release of even bigger amounts of energy</div>
+					<audio id="sound1" src="Slide1.mp3"></audio>
+					<img class="speaker" id="audio1" src="speaker.PNG" alt="Audio!" width="25px" height="25px" onclick="document.getElementById('sound1').play();"/>
+					<!--TRANSCRIPT-->
+					<div class="transc" id="tran1" style="display:none">TRANSCRIPT:<br/>Nuclear Fission: A reaction in which a large nucleus becomes unstable<br/>and spilts into smaller atoms with the release of a huge amont of energy.<br/>Nuclear Fusion: A reaction in which the nuclei of two small atoms come together<br/>to form a larger atom with the release of even bigger amounts of energy.</div>
+				</div>
+				<div id="slide2" style="display:none">
+					<div class="words" id="text2"><strong><u>Binding Energy</u></strong>: the amount of energy holding an atom's nucleus together</div>
+					<img id="graph" src="graph.jpg" alt="dis da graph" width="500px" height="300px"/>
+					<audio id="sound2" src="Slide2.mp3"></audio>
+					<img class="speaker" id="audio2" src="speaker.PNG" alt="Audio!" width="25px" height="25px" onclick="document.getElementById('sound2').play();"/>
+					<!--TRANSCRIPT-->
+					<div class="transc" id="tran2" style="display:none;position:relative;top:-400px"><br/>TRANSCRIPT:<br/>The graph above shows the average binding energy of common atoms.<br/>Binding energy is the amount of energy holding an atom's nucleus together.<br/>As you can see, the difference in binding energy between Hydrogen and Helium<br/>is much greater than the difference in binding energy<br/> between two very large atoms. This is why nuclear fusion<br/>produces much larger amounts of energy.</div>
+				</div>
+				<div id="slide3" style="display:none">
+					<div class="words" id="text3">Step 1 in Nuclear Fusion</div>
+					<img id="eq1_learn" src="eq1_learn.PNG" alt="dis da equation" width="300px" height="75px"/>
+					<audio id="sound3" src="Slide3.mp3"></audio>
+					<img class="speaker" id="audio3" src="speaker.PNG" alt="Audio!" width="25px" height="25px" onclick="document.getElementById('sound3').play();"/>
+					<!--TRANSCRIPT-->
+					<div class="transc" id="tran3" style="display:none"><br/>TRANSCRIPT:<br/>In order to understand nuclear fusion, we'll look at the kind of nuclear fusion<br/>that happens in the sun. This is the first step.<br/>Two Hydrogen-1 atoms combine under the intense heat and pressure of the sun.<br/>This reaction forms one atom of Hydrogen-2 and one positron,<br/>or a positively charged electron.<br/>While this part of the nuclear fusion process is occurring, massive amounts of heat<br/>are being released to aid in making other reactions like this one possible.</div>
+				</div>
+				<div id="slide4" style="display:none">
+					<div class="words" id="text4">Step 2 in Nuclear Fusion</div>
+					<img id="eq2_learn" src="eq2_learn.PNG" alt="dis da equation" width="250px" height="75px"/>
+					<audio id="sound4" src="Slide4.mp3"></audio>
+					<img class="speaker" id="audio4" src="speaker.PNG" alt="Audio!" width="25px" height="25px" onclick="document.getElementById('sound4').play();"/>
+					<!--TRANSCRIPT-->
+					<div class="transc" id="tran4" style="display:none"><br/>TRANSCRIPT:<br/>In the second step of the nuclear fusion in the sun, another Hydrogen-1 atom<br/>combines with the Hydrogen-2 atom formed in the first step.<br/>This forms a Helium-3 atom and large amounts of gamma radiation (energy).<br/>It is important to note here that we have used a total of three<br/>Hydrogen-1 atoms in the first two steps. This is an example of how nuclear fusion<br/>needs a constant fuel source and does not necessarily<br/>create a chain reaction like in a nuclear fission reaction.</div>
+				</div>
+				<div id="slide5" style="display:none">
+					<div class="words" id="text5">Step 3 in Nuclear Fusion</div>
+					<img id="eq3_learn" src="eq3_learn.PNG" alt="dis da equation" width="300px" height="75px"/>
+					<audio id="sound5" src="Slide5.mp3"></audio>
+					<img class="speaker" id="audio5" src="speaker.PNG" alt="Audio!" width="25px" height="25px" onclick="document.getElementById('sound5').play();"/>
+					<!--TRANSCRIPT-->
+					<div class="transc" id="tran5" style="display:none"><br/>TRANSCRIPT:<br/>For the third and final step, each of the first two steps needs to occur <u>twice</u>,<br/>because two Helium-3 atoms are needed.  The two Helium-3 atoms combine to form<br/>one Helium-4 atom (the desired product), 2 Hydrogen-1 atoms,<br/>and more gamma radiation.  The fact that only two Hydrogen-1 atoms<br/>are produced when six of them are needed to complete this series of reactions<br/>shows how nuclear fusion requires a constant fuel source.</div>
+				</div>
+				<div id="slide6" style="display:none;position:relative;bottom:50px">
+					<div class="words" id="text6"><span style="font-size:28px"><u>Effects of Harnessing the Power of Nuclear Fusion:</u></span></br><ol type="1"><li>More stable isotopes, like Helium-4, can be formed; </br>nuclear fission produces unstable isotopes</li><li>A huge amount of energy could be harnessed at one time</li><li>A reliable source of energy could be used to end the energy crisis</li></ol></div>
+					<audio id="sound6" src="Slide6.mp3"></audio>
+					<img class="speaker" id="audio6" src="speaker.PNG" alt="Audio!" width="25px" height="25px" onclick="document.getElementById('sound6').play();"/>
+					<!--TRANSCRIPT-->
+					<div class="transc" id="tran6" style="display:none">TRANSCRIPT:<br/>The effects of harnessing the power of nuclear fusion include<br/>forming more stable isotopes, like Helium-4,<br/>being able to produce and harness a huge amount of energy at one time,<br/>and having a reliable source of energy to help end the energy crisis.</div>
+				</div>
+			</div>
+
+			<div class='body exp' id="interact" style="color:white">
+				<div id="intopen" class="twelve">
+					1. Click the plus button to add Hydrogen-1 atoms<br/><br/>
+					2. Drag the H-1 atoms on top of each other and click to make them react!<br/><br/>
+					3. When different atoms appear, nuclear fusion has occurred!<br/>Experiment with the new particles to make new reactions<br/><br/>
+					4. If atoms don't react when clicked, they weren't positioned correctly<br/>to have enough speed and pressure! Re-align them and try again<br/><br/>
+					5. Once you've completed the nuclear fusion process, hit RESET to clear all atoms!<br/><br/>
+					<span id="cont" style="font-size:25px">NEXT ></span>
+				</div>
+				<div id="parttwo" style="display:none">
+				<!--<div id="instruct"><em><strong>Click &<br/>Drag to<br/>React!</strong></em></div>-->
+				<img id="tank" src="gas_tank.PNG" alt="tank of Hydrogen-1" width="120px" height="240px"/>
+				<div id="H">Hydrogen-1</div>
+				<img id="hplus" src="plus.PNG" alt="plus" width="40px" height="40px"/><!--pointer-->
+				<div id="case"></div>
+				<div id="hydrogen1"></div>
+				<div id="reset" style="display:none">RESET</div>
+				<div id="cheat"></div>
+				</div>
+			</div>
+
+			<div class='body' id="quiz"> 
+
+				<div class="nextbutton" id="nextbutton1" style="display:none">NEXT</div>
+				<div class="nextbutton" id="nextbutton2" style="display:none">NEXT</div>
+				<div class="nextbutton" id="nextbutton3" style="display:none">NEXT</div>
+				<div class="nextbutton" id="nextbutton4" style="display:none">NEXT</div>
+				<div class="nextbutton" id="nextbutton5" style="display:none">NEXT</div>
+				<div class="nextbutton" id="nextbutton6" style="display:none">NEXT</div>
+				<div class="nextbutton" id="nextbutton7" style="display:none">NEXT</div>
+
+				<div id="question1">
+					<div class="question"><span class='question'>1. Which numbers correctly balance the equation?</span></div>
+					<img id="equation1" src="question1.PNG" alt="Dis da equation"/>
+					<div class="answer A" id="A1">A) 2,1,2</div>
+					<div class="answer B" id="B1">B) 2,1,1</div>
+					<div class="answer C" id="C1">C) 1,2,2</div>
+					<div class="answer D" id="D1">D) 2,2,2</div>
+					<div class="message" id="correct1" style="display:none">Correct!</div>
+					<div class="message" id="incorrect1" style="display:none">Incorrect.</div>
+					<div class="exp" id="exp1" style="display:none">You would need 2 Helium-3, 1 Helium-4, and 2 Hydrogen-1 to balance this equation.</div>
+				</div>
+
+				<div id="question2" style="display:none">
+					<div class="question"><span class='question'>2. Under what conditions is nuclear fusion possible?</span></div>
+					<div class="answer A" id="A2">A) High speed & velocity</div>
+					<div class="answer B" id="B2">B) High speed & pressure</div>
+					<div class="answer C" id="C2">C) High pressure & volume</div>
+					<div class="answer D" id="D2">D) High pressure & ionic charges</div>
+					<div class="message" id="correct2" style="display:none">Correct!</div>
+					<div class="message" id="incorrect2" style="display:none">Incorrect.</div>
+					<div class="exp" id="exp2" style="display:none">Nuclear fusion can only take place with high speed and high pressure particles,</br>because of the huge amount of energy needed to add protons to a nucleus.</div>
+				</div>
+
+				<div id="question3" style="display:none">
+					<div class="question"><span class='question'>3. What kind of nuclei can undergo nuclear fusion?</span></div>
+					<div class="answer A" id="A3">A) Big nuclei</div>
+					<div class="answer B" id="B3">B) Nuclei with a positive net charge</div>
+					<div class="answer C" id="C3">C) Nuclei with a negative net charge</div>
+					<div class="answer D" id="D3">D) Small nuclei</div>
+					<div class="message" id="correct3" style="display:none">Correct!</div>
+					<div class="message" id="incorrect3" style="display:none">Incorrect.</div>
+					<div class="exp" id="exp3" style="display:none">Only fusing small nuclei produces energy. Fusing large nuclei provides for </br>an energy <em>deficit</em>.</div>
+				</div>
+
+				<div id="question4" style="display:none">
+					<div class="question"><span class='question'>4. In the following reaction, what does the last symbol on </br>&emsp;the right signify?</span></div>
+					<img id="equation4" src="question4.PNG" alt="Dis da equation"/>
+					<div class="answer A" id="A4">A) The continuing fuel source</div>
+					<div class="answer B" id="B4">B) A Positron (positive electron)</div>
+					<div class="answer C" id="C4">C) Gamma waves</div>
+					<div class="answer D" id="D4">D) An incoming source of energy</div>
+					<div class="message" id="correct4" style="display:none">Correct!</div>
+					<div class="message" id="incorrect4" style="display:none">Incorrect.</div>
+					<div class="exp" id="exp4" style="display:none">Nuclear fusion reactions release gamma radiation as a product.</div>
+				</div>
+
+				<div id="question5" style="display:none">
+					<div class="question"><span class='question'>5. Which produces more energy?</span></div>
+					<div class="answer A" id="A5">A) Nuclear Fission</div>
+					<div class="answer B" id="B5">B) Nuclear Fusion</div>
+					<div class="message" id="correct5" style="display:none">Correct!</div>
+					<div class="message" id="incorrect5" style="display:none">Incorrect.</div>
+					<div class="exp" id="exp5" style="display:none">Nuclear fusion reactions release more energy than nuclear fission reactions.</div>
+				</div>
+
+				<div id="question6" style="display:none">
+					<div class="question"><span class='question'>6. True or False: Nuclear fusion has been utilized by man</br> for industrial purposes, but not nuclear fission.</span></div>
+					<div class="answer A" id="A6">A) True</div>
+					<div class="answer B" id="B6">B) False</div>
+					<div class="message" id="correct6" style="display:none">Correct!</div>
+					<div class="message" id="incorrect6" style="display:none">Incorrect.</div>
+					<div class="exp" id="exp6" style="display:none">Nuclear fusion reactions are too powerful for human's current technology to control.</div>
+				</div>
+
+				<div id="question7" style="display:none">
+					<div class="question"><span class='question'>7. Which of the following would be an effect of human </br>control of nuclear fusion's power?</span></div>
+					<div class="answer A" id="A7">A) Controlling huge amounts of energy</div>
+					<div class="answer B" id="B7">B) Creating large amounts of stable isotopes</div>
+					<div class="answer C" id="C7">C) Creating a reliable source of energy</div>
+					<div class="answer D" id="D7">D) All of the above</div>
+					<div class="message" id="correct7" style="display:none">Correct!</div>
+					<div class="message" id="incorrect7" style="display:none">Incorrect.</div>
+					<div class="exp" id="exp7" style="display:none">Controlling nuclear fusion would essentially eliminate the need for any </br>other means of producing energy.</div>
+				</div>
+
+				<div id="finish" style="display:none">Congratulations! You got <span id="value"></span> out of 7 correct!</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script type="text/javascript" src="jq.js"></script>
+		<script type="text/javascript" src="yckart-jquery.overlaps.js-1ac2b5b/jquery.overlap.js"></script>
+	</body>
+</html>
